@@ -24,9 +24,8 @@ public class ContactController {
         boolean success = hubspotService.createContact(request);
         if (success) {
             return ResponseEntity.status(HttpStatus.CREATED).body("Contato criado com sucesso.");
-        } else {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Erro ao criar contato.");
         }
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Erro ao criar contato.");
     }
 }
 

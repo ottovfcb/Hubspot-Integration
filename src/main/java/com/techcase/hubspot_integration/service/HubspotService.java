@@ -5,7 +5,6 @@ import com.techcase.hubspot_integration.model.TokenStorage;
 import com.techcase.hubspot_integration.model.dto.ContactRequest;
 import io.github.resilience4j.ratelimiter.RateLimiter;
 import io.github.resilience4j.ratelimiter.RateLimiterRegistry;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
