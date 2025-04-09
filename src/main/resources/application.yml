@@ -1,9 +1,16 @@
+spring:
+  application:
+    name: hubspot-integration
+
+server:
+  port: 8080
+
 hubspot:
-  client-id: client-id-aqui
+  client-id: 3f42e539-caf5-4453-b615-68d99328db94
   redirect-uri: http://localhost:8080/oauth/callback
   scopes: crm.objects.contacts.write%20oauth%20crm.objects.contacts.read
   authorization-url: https://app.hubspot.com/oauth/authorize
-  client-secret: client-secret-aqui
+  client-secret: 3bf2c25d-2597-4d61-9058-25fb4053748f
   token-url: https://api.hubapi.com/oauth/v1/token
   api-url: https://api.hubapi.com
 
